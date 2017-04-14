@@ -6,7 +6,7 @@ Easy and dynamic time countdown system
 <script type="text/javascript" src="src/countdown.js"></script>
 
 <div class="count_down" data-date="April 14, 2017 11:50:00"></div>
-<div class="count_down" data-date="April 15, 2017 11:50:00"></div>
+<div class="count_down" c-date="April 15, 2017 11:50:00"></div>
 
 ```
 Initializing plugin 
@@ -14,7 +14,8 @@ Initializing plugin
  $('.count_down').countdown();
 ```
 ``0D:09H:47M:18S``   
-``0D:21H:48M:32S``
+``0D:21H:48M:32S``  
+ 
 ##Optional plugin configurations on initialization
 
 <table>
