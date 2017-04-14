@@ -17,9 +17,8 @@ $.fn.countdown = function (args) {
         };
     }
 
-    function initializeClock(id, e, config, endtime)
+    function initializeClock(e, config, end_time)
     {
-
         e.append('<span id="day"></span>' +
             '<span id="hour"></span>' +
             '<span id="minute"></span>' +
@@ -38,7 +37,6 @@ $.fn.countdown = function (args) {
         titles.minute = 'M';
         titles.second = 'S';
 
-
         $.map(config, function( value, index )
         {
             if (typeof value === 'object') {
@@ -53,18 +51,17 @@ $.fn.countdown = function (args) {
             }
         });
 
-
         function updateClock()
         {
-            var t = getTimeRemaining(endtime);
-
+            var t = getTimeRemaining(end_time);
             var day = t.days;
             var hour = ('0' + t.hours).slice(-2);
             var minute = ('0' + t.minutes).slice(-2);
             var second = ('0' + t.seconds).slice(-2);
 
-            if (t.total <= 0) {
-                clearInterval(timeinterval);
+            if (t.total <= 0)
+            {
+                clearInterval(time_interval);
                 if (typeof config.onComplete === 'function') {
                     e.html(config.onComplete(e));
                 }
@@ -80,19 +77,13 @@ $.fn.countdown = function (args) {
             placeholders.hour.html(hour + '' + titles.hour);
             placeholders.minute.html(minute + '' + titles.minute);
             placeholders.second.html(second + '' + titles.second);
-
         }
 
-
         updateClock();
-        var timeinterval = setInterval(updateClock, (typeof config.update == 'number') ? config.update : 1000);
+        var time_interval = setInterval(updateClock, (typeof config.update == 'number') ? config.update : 1000);
     }
 
-    var working_date = this.attr('data-date');
-    var deadline = new Date(Date.parse(new Date(working_date)));
-    initializeClock('clockdiv', this, args, deadline);
-
-    console.log(1);
-
+    var deadline = new Date(Date.parse(this.attr('data-date')));
+    initializeClock(this, args, deadline);
 };
 

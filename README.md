@@ -9,8 +9,10 @@ Easy and dynamic time countdown system
 <div class="count_down" data-date="April 15, 2017 11:50:00"></div>
 
 ```
-
-Configuration
+```js
+ $('.count_down').countdown();
+```
+Optional Configuration
 
 ```js
  $('.count_down').countdown({
