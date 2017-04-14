@@ -15,8 +15,8 @@ Initializing plugin
 ```
 ``0D:09H:47M:18S``   
 ``0D:21H:48M:32S``  
- 
-##Optional plugin configurations on initialization
+
+## Optional plugin configurations on initialization
 
 <table>
   <tr>
@@ -61,7 +61,7 @@ Initializing plugin
   </tr>
 </table>
 
-## date usage
+## Date usage approaches
 Note: doing this:
 ```html
 <div class="count_down" m-date="April 15, 2017 11:50:00"></div>
