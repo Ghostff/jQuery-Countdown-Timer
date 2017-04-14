@@ -5,8 +5,8 @@ Easy and dynamic time countdown system
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="src/countdown.js"></script>
 
-<div class="count_down" data-date="April 14, 2017 11:50:00"></div>
-<div class="count_down" c-date="April 15, 2017 11:50:00"></div>
+<div class="count_down" d-date="April 14, 2017 11:50:00"></div>
+<div class="count_down" d-date="April 15, 2017 11:50:00"></div>
 
 ```
 Initializing plugin 
