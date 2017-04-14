@@ -1,4 +1,4 @@
-$.fn.coutDown = function (args) {
+$.fn.countdown = function (args) {
 
 
     function getTimeRemaining(end_time)
@@ -25,13 +25,13 @@ $.fn.coutDown = function (args) {
             '<span id="minute"></span>' +
             '<span id="second"></span>');
 
-        var placholders = {};
+        var placeholders = {};
         var titles = {};
 
-        placholders.day = e.children('#day');
-        placholders.hour = e.children('#hour');
-        placholders.minute = e.children('#minute');
-        placholders.second = e.children('#second');
+        placeholders.day = e.children('#day');
+        placeholders.hour = e.children('#hour');
+        placeholders.minute = e.children('#minute');
+        placeholders.second = e.children('#second');
 
         titles.day = 'D';
         titles.hour = 'H';
@@ -44,7 +44,7 @@ $.fn.coutDown = function (args) {
             if (typeof value === 'object') {
                 $.map(value, function( val, key ) {
                     if (key != 'text') {
-                        placholders[index].attr(key, val);
+                        placeholders[index].attr(key, val);
                     }
                     else {
                         titles[index] = val;
@@ -57,24 +57,42 @@ $.fn.coutDown = function (args) {
         function updateClock()
         {
             var t = getTimeRemaining(endtime);
-            placholders.day.text(t.days + '' + titles.day);
-            placholders.hour.text(('0' + t.hours).slice(-2) + '' + titles.hour);
-            placholders.minute.text(('0' + t.minutes).slice(-2) + '' + titles.minute);
-            placholders.second.text(('0' + t.seconds).slice(-2) + '' + titles.second);
+
+            var day = t.days;
+            var hour = ('0' + t.hours).slice(-2);
+            var minute = ('0' + t.minutes).slice(-2);
+            var second = ('0' + t.seconds).slice(-2);
 
             if (t.total <= 0) {
                 clearInterval(timeinterval);
+                if (typeof config.onComplete === 'function') {
+                    e.html(config.onComplete(e));
+                }
+                else {
+                    day = 0;
+                    hour = 0;
+                    minute = 0;
+                    second = 0;
+                }
             }
+
+            placeholders.day.html(day + '' + titles.day);
+            placeholders.hour.html(hour + '' + titles.hour);
+            placeholders.minute.html(minute + '' + titles.minute);
+            placeholders.second.html(second + '' + titles.second);
+
         }
 
 
         updateClock();
-        var timeinterval = setInterval(updateClock, 1000);
+        var timeinterval = setInterval(updateClock, (typeof config.update == 'number') ? config.update : 1000);
     }
 
     var working_date = this.attr('data-date');
     var deadline = new Date(Date.parse(new Date(working_date)));
     initializeClock('clockdiv', this, args, deadline);
+
+    console.log(1);
 
 };
 

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="260a1548-c88c-429d-8478-e99470336756" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/countdown.js" afterPath="$PROJECT_DIR$/src/countdown.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +15,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.htm" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="7" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="27" selection-end-column="7" />
+            <state relative-caret-position="468">
+              <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -28,12 +28,9 @@
       <file leaf-file-name="countdown.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/countdown.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-              <folding>
-                <element signature="e#80#545#0" expanded="false" />
-                <element signature="e#604#2156#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="404">
+              <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -42,8 +39,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="396">
-                <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+              <first_editor relative-caret-position="162">
+                <caret line="9" column="0" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="9" selection-end-column="0" />
                 <folding>
                   <marker date="1492146034335" expanded="true" signature="414:653" ph="{&quot;display&quot;: '.show'...}" />
                   <marker date="1492146034335" expanded="true" signature="425:565" ph="{&quot;id&quot;: 'day-id'...}" />
@@ -55,7 +52,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
@@ -81,10 +78,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Countdown.js" />
-        <option value="$PROJECT_DIR$/index.htm" />
-        <option value="$PROJECT_DIR$/src/countdown.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/countdown.js" />
+        <option value="$PROJECT_DIR$/index.htm" />
       </list>
     </option>
   </component>
@@ -227,12 +224,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1492145267993</updated>
-      <workItem from="1492145269334" duration="773000" />
+      <workItem from="1492145269334" duration="3170000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="773000" />
+    <option name="totallyTimeSpent" value="3170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -266,33 +263,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/countdown.js</url>
-          <line>4</line>
-          <properties />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="1" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/countdown.js">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding>
-            <element signature="e#80#545#0" expanded="false" />
-            <element signature="e#604#2156#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="54">
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           <folding />
         </state>
       </provider>
@@ -300,8 +279,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="396">
-            <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+          <first_editor relative-caret-position="162">
+            <caret line="9" column="0" lean-forward="true" selection-start-line="7" selection-start-column="38" selection-end-line="9" selection-end-column="0" />
             <folding>
               <marker date="1492146034335" expanded="true" signature="414:653" ph="{&quot;display&quot;: '.show'...}" />
               <marker date="1492146034335" expanded="true" signature="425:565" ph="{&quot;id&quot;: 'day-id'...}" />
@@ -312,10 +291,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/countdown.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+        <state relative-caret-position="404">
+          <caret line="57" column="9" lean-forward="true" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
           <folding />
         </state>
       </provider>

@@ -13,7 +13,7 @@ Easy and dynamic time countdown system
 Configuration
 
 ```js
-$('.count_down').coutDown({
+ $('.count_down').countdown({
     day: {
         class: 'day-class',
         id: 'day-id',
@@ -24,7 +24,10 @@ $('.count_down').coutDown({
     hour: {},
     minute: {},
     second: {},
-    update: 10000,
-    onComplete: '',
+    update: 1000,
+    onComplete: function (e) {
+        e.addClass('expired');
+        return 'Expired';
+    },
 });
 ```
