@@ -1,5 +1,5 @@
 $.fn.countdown = function (args) {
-
+    args = args || {};
 
     function getTimeRemaining(end_time)
     {
