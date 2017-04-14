@@ -1,4 +1,4 @@
-$.fn.countdown = function (args, date) {
+$.fn.countdown = function (args) {
     args = args || {};
 
     return this.each(function()
