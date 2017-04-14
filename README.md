@@ -13,6 +13,8 @@ Initializing plugin
 ```js
  $('.count_down').countdown();
 ```
+``0D:09H:47M:18S``   
+``0D:21H:48M:32S``
 ##Optional plugin configurations on initialization
 
 <table>
@@ -49,12 +51,12 @@ Initializing plugin
   <tr>
       <td><strong>date</strong></td>
       <td><small>string</small></td>
-      <td>For some reasons you dont want to pass your countdown date to a placeholder, or you want a global date for all countdown element, then you can pass the end date as a value to this index</td>
-   </tr>
+      <td>For some reasons you don't want to pass your countdown date to a placeholder, or you want a global date for all countdown element, then you can pass the end date as a value to this index</td>
+  </tr>
   <tr>
       <td><strong>onComplete</strong></td>
       <td><small>function</small></td>
-      <td>A function that will be called when time elapses. This function accepts a single argument which is the object of the current html element that countdown is being renderd in</td>
+      <td>A function that will be called when time elapses. This function accepts a single argument which is the object of the current html element that countdown is being rendered in</td>
   </tr>
 </table>
 
@@ -119,7 +121,7 @@ $('.count_down').countdown({
     },
     second: {
         text: 'S ',
-        style: 'color:yellow;'
+        style: 'color:black;'
     },
     update: 1000,
     placeholder: 'd-date',
